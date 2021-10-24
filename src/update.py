@@ -99,13 +99,21 @@ if __name__ == "__main__":
     texture = PosterUpdate(texture, "http://drive.google.com/uc?export=view&id=1vd03IHIGYUeebPaZd3mo7ggjObYGCOXK"
             ,"./imgs/poster6.png" ,cursor)
 
+
+
+
+
     cursor = (0, CALENDAR_HEIGHT+POSTER_HEIGHT)
-    texture = PosterUpdate(texture, "http://drive.google.com/uc?export=view&id=1B9CCM6oB0DHTdijU1QQjcqM1SdIWMz7q"
+    texture = PosterUpdate(texture, "http://drive.google.com/uc?export=view&id=1jxdi_GTvdIldhGfYnGczYqyAKv8Rfp3M"
             ,"./imgs/fixedposter1.png" ,cursor)
+
+    cursor = (cursor[0]+POSTER_WIDTH, CALENDAR_HEIGHT+POSTER_HEIGHT)
+    texture = PosterUpdate(texture, "http://drive.google.com/uc?export=view&id=1B9CCM6oB0DHTdijU1QQjcqM1SdIWMz7q"
+            ,"./imgs/fixedposter2.png" ,cursor)
     
     cursor = (cursor[0]+POSTER_WIDTH, CALENDAR_HEIGHT+POSTER_HEIGHT)
     texture = PosterUpdate(texture, "https://dl.dropboxusercontent.com/s/ucv3hvxnvodrp25/PS1.PNG?dl=0"
-            ,"./imgs/fixedposter2.png" ,cursor)
+            ,"./imgs/fixedposter3.png" ,cursor)
     # Write video
     # cv2.imwrite('./poster.png',texture)   
     out = cv2.VideoWriter('./poster.mp4',0x7634706d, 15, (TEXTURE_WIDTH, TEXTURE_HEIGHT))    
